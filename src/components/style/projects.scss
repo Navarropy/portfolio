@@ -1,0 +1,10 @@
+.projects {
+    width: 75%;
+    height: 100vh;
+    background: gray;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start
+}
