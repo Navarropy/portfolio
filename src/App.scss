@@ -8,26 +8,71 @@
   width: 100vw;
   height: 100vh;
   
-  .container {
-  width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-
-  .tasks {
-    position: absolute;
-    background: blue;
-    min-width: 5vw;
-    min-height: 5vh;
+    .container {
+    width: 100%;
+    min-height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1% 3% 1% 3%;
-    font-weight: bold;
-    color: white;
-    z-index: 5;
-  }
+    flex-direction: row-reverse;
+    word-wrap: break-word;
 
+    .tasks {
+      position: absolute;
+      background: blue;
+      min-width: 5vw;
+      min-height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1% 3% 1% 3%;
+      font-weight: bold;
+      color: white;
+      z-index: 5;
+    }
   }
-
 }
+
+@media only screen and (max-width: 1000px) {
+  .projects {
+    width: 50vw !important;
+    overflow-X: hidden;
+
+    .project {
+      width: 50vw;
+    }
+
+    .project:nth-child(1) {
+      background-position: center;
+    }
+  }
+
+  .sidebar {
+    width: 50vw !important;
+  }
+}
+
+::selection {
+  background: #1a348c;
+  color: #a0b6ff;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #1f1f1f #383838;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 17px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #383838;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #1f1f1f;
+    border-radius: 0px;
+    border: 0px solid #ffffff;
+  }
