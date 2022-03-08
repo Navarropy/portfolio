@@ -1,15 +1,12 @@
 import "./style/section.scss"
 
-export default function Section() {
+export default function Section(props) {
     return(
             <div className="info-section">
-                <div className="title">Section Name</div>
+                <div className="title">{props.title}</div>
                 <div className="body">
                     <ul>
-                        <li>aaa</li>
-                        <li>aaa</li>
-                        <li>aaa</li>
-                        <li>aaa</li>
+                        {props.children}   
                     </ul>
                 </div>
             </div>

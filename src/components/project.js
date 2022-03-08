@@ -1,9 +1,11 @@
 import "./style/project.scss"
 
-export default function Project() {
+export default function Project(props) {
     return(
         <>
-            <div className="project"></div>
+            <a href={props.link} target="_blank">
+                <div className="project" style={{background: `url(${props.background})`, backgroundPosition: props.position, backgroundSize: "cover"}}></div>
+            </a>
         </>
     )
 }

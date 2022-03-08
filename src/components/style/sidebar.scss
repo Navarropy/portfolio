@@ -1,21 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 .sidebar {
     width: 25%;
     height: 100vh;
     background: rgb(38, 38, 38);
-    font-family: 'Gideon Roman', cursive;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2%;
 
-    .name {
-        width: 100%;
-        height: 10%;
-        background: rgb(21, 21, 21);
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        color: white;
-        font-weight: bold;
-        letter-spacing: 3px;
-        padding-left: 5%;
+    &-container {
+        min-width: 5%;
+        min-height: 100%;
+        padding: 5%;
+        background: rgba(107, 107, 107, 0.247);;
+
+        .personal-info {
+            min-height: 10%;
+    
+            .position {
+                background: rgb(49, 97, 255);
+                padding: 2%;
+                width: 70%;
+                color: white;
+                margin: 5% 5% 5% 0;
+                border-radius: 5px;
+                text-align: center;
+            }
+    
+            .name {
+                width: 100%;
+                min-height: 1vh;
+                display: flex;
+                align-items: center;
+                color: rgba(255, 255, 255, 0.878);
+                letter-spacing: 3px;
+                word-wrap: normal;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 25px;
+                line-height: 25px;
+            }
+    
+            .contact {
+                width: 100%;
+                min-height: 1vh;
+                color: rgba(255, 255, 255, 0.35);
+                margin-bottom: 15%;
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
     }
 }
